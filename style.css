@@ -70,12 +70,13 @@ body {
 
 .filters-results {
     width: 80%;
-    height: 100px;
+    height: 80px;
     background-color: rebeccapurple;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
-    right: 0px;
+    right: 20px;
     margin-top: 70px;
     background-color: #ffffff;
 }
@@ -83,13 +84,19 @@ body {
 .filters-results p {
     font-family: 'Questrial', sans-serif;
     padding: 25px;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.buttons-filters-container {
+    display: flex;
+    position: absolute;
+    right: 20px;
 }
 
 .button-filter {
     border: none;
     font-size: 20px;
-    margin: 2px;
     background-color: transparent;
     display: flex;
+    color: #CA1F7F;
 }
