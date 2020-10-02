@@ -141,7 +141,7 @@ body {
 
 #search-box-input {
     width: 120%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     border: none;
     border-bottom: 2px solid #CA1F7F;
     background-color: transparent;
@@ -150,10 +150,10 @@ body {
     display: flex;
 }
 
-.search-box>i {
+.search-box>button {
     position: relative;
-    left: 20px;
-    top: 60px;
+    left: 15px;
+    top: 25px;
     color: #CA1F7F;
 }
 
