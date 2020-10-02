@@ -87,7 +87,7 @@ body {
 
 .filters-results p {
     font-family: 'Questrial', sans-serif;
-    padding: 25px;
+    padding: 20px;
     font-size: 15px;
 }
 
@@ -102,6 +102,8 @@ body {
     font-size: 20px;
     background-color: transparent;
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: #CA1F7F;
 }
 
