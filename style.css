@@ -23,7 +23,7 @@ body {
 }
 
 .shopping-basket-section {
-    width: 100px;
+    width: 200px;
     height: 30px;
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 70px;
+    right: 5px;
     top: 30px;
     border: none;
     background-color: transparent;
