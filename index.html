@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- HEADER: LOGO Y CESTA -->
     <header class="header-container">
         <div class="img-header-container">
             <img src="./img/logo.png" alt="">
@@ -21,388 +23,400 @@
         </button>
     </header>
 
+    <!-- BANNER -->
     <div class="banner">
         <h1 class="banner-title">MEDICINA</h1>
     </div>
 
+    <!-- SECCION PRINCIPAL CONTENEDORA DE ASIDE Y PRODUCTOS -->
+    <section class="principal-section">
 
-    <!-- SECCION DE FILTROS DE PRODUCTOS -->
-    <section class="filters-results">
-        <p>Mostrando 12 producto(s) de 12</p>
-        <div class="buttons-filters-container">
-            <p>Ver como</p>
-            <button class="button-filter">
-                <i class="fas fa-th"></i>
-            </button>
-            <button class="button-filter">
-                <i class="fas fa-list"></i>
-            </button>
+        <!-- ASIDE -->
+        <aside class="aside-container">
+            <div class="search-filters">
+                <h2>FILTROS</h2>
+                <button class="button-filter">
+                    <i class="fas fa-trash-alt"></i>
+                    <p>Limpiar</p>
+                </button>
+
+            </div>
+            <div class="search-box">
+                <label>
+                    <h3>BÚSQUEDA</h3>
+                    <input type="text" placeholder="Buscar Productos" id="search-box-input" />
+                </label>
+                <button class="button-filter">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="filters-checkbox">
+                <h3>CATEGORÍA</h3>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />Otoscopios
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />Oxímetros
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />Descartables
+                </label>
+            </div>
+
+            <div class="filters-checkbox">
+                <h3>PUNTAJE</h3>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    (5)
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (4)
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (3)
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (2)
+                </label>
+                <label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (1)
+                </label>
+
+            </div>
+        </aside>
+
+        <!-- SECCION DERECHA DE RESULTADOS DEL FILTRO Y PRODUCTOS -->
+        <div class="products-container">
+            <!-- RESULTADO DE FILTROS -->
+            <div class="filters-results-container">
+
+                <p>Mostrando 12 producto(s) de 12</p>
+                <div class="buttons-filters-container">
+                    <p>Ver como</p>
+                    <button class="button-filter">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="button-filter">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CONTENEDOR DE LOS PRODUCTOS -->
+            <div class="products-cards-section">
+                <!-- TARJETA DE PRODUCTOS -->
+                <article class="product-card">
+                    <!-- IMAGEN PRODUCTOS -->
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <!-- DESCRIPCION DE PRODUCTOS -->
+                        <div class="product-description">
+                            <h3 class="product-title">ESTETOSCOPIO LITTMANN CARDIOLOGY IV</h3>
+                            <p>$24000</p>
+                            <div>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product2.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET LED</h3>
+                            <p class="product-price">$17000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product3.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">TENSIOMETRO ANEROIDE PEDIATRICO SILBAF</h3>
+                            <p class="product-price">$1600</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product4.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">OXIMETRO DE PULSO NEL P/ADULTO </h3>
+                            <p class="product-price">$2000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product5.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">ESTETOSCOPIO LITTMANN CARDIOLOGY IV RAINBOW</h3>
+                            <p class="product-price">$27000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product6.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET JUNIOR</h3>
+                            <p class="product-price">$10000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product7.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">TAPABOCAS N95 MARCA M3 POR UNIDAD</h3>
+                            <p class="product-price">$500</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product8.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">TENSIOMETRO DIGITAL OMROM 7130</h3>
+                            <p class="product-price">$5000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product9.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">ESTETOSCOPIO LITTMANN MASTER CARDIOLOGY</h3>
+                            <p class="product-price">$30000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product10.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET SCOPE C/MANGO</h3>
+                            <p class="product-price">$26000</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product11.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">GUANTES DE CIRUGIA ESTERILES POR PAR</h3>
+                            <p class="product-price">$32</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-information-container">
+                        <div class="product-img">
+                            <img src="./img/product12.jpg" alt="">
+                        </div>
+                        <div class="product-description">
+                            <h3 class="product-title">TELA ADHESIVA TRANSPORE 2.5*9*UN 42212</h3>
+                            <p class="product-price">$193</p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
         </div>
     </section>
 
-    <!-- SECCION DE TARJETAS DE PRODUCTOS -->
-    <section class="products-cards-section">
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product1.jpg" alt="">
-                </div>
-
-                <div class="product-description">
-                    <h3 class="product-title">ESTETOSCOPIO LITTMANN CARDIOLOGY IV</h3>
-                    <p class="product-price">$24000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product2.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET LED</h3>
-                    <p class="product-price">$17000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product3.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">TENSIOMETRO ANEROIDE PEDIATRICO SILBAF</h3>
-                    <p class="product-price">$1600</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product4.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">OXIMETRO DE PULSO NEL P/ADULTO </h3>
-                    <p class="product-price">$2000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product5.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">ESTETOSCOPIO LITTMANN CARDIOLOGY IV RAINBOW</h3>
-                    <p class="product-price">$27000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product6.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET JUNIOR</h3>
-                    <p class="product-price">$10000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product7.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">TAPABOCAS N95 MARCA M3 POR UNIDAD</h3>
-                    <p class="product-price">$500</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product8.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">TENSIOMETRO DIGITAL OMROM 7130</h3>
-                    <p class="product-price">$5000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product9.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">ESTETOSCOPIO LITTMANN MASTER CARDIOLOGY</h3>
-                    <p class="product-price">$30000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product10.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET SCOPE C/MANGO</h3>
-                    <p class="product-price">$26000</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product11.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">GUANTES DE CIRUGIA ESTERILES POR PAR</h3>
-                    <p class="product-price">$32</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="product-card">
-            <div class="product-information-container">
-                <div class="product-img">
-                    <img src="./img/product12.jpg" alt="">
-                </div>
-                <div class="product-description">
-                    <h3 class="product-title">TELA ADHESIVA TRANSPORE 2.5*9*UN 42212</h3>
-                    <p class="product-price">$193</p>
-                    <div class="product-review">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="product-buy">
-                        <button class="buy-button">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-
-
-
-
-    </section>
-
-    <aside class="aside-container">
-        <div class="search-filters">
-            <h2>FILTROS</h2>
-            <button class="button-filter">
-                <i class="fas fa-trash-alt"></i>
-                <p>Limpiar</p>
-            </button>
-
-        </div>
-        <div class="search-box">
-            <label>
-                <h3>BÚSQUEDA</h3>
-                <input type="text" placeholder="Buscar Productos" id="search-box-input" />
-            </label>
-            <button class="button-filter">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-
-        <div class="filters-checkbox">
-            <h3>CATEGORÍA</h3>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />Otoscopios
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />Oxímetros
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />Descartables
-            </label>
-        </div>
-
-        <div class="filters-checkbox">
-            <h3>PUNTAJE</h3>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                (5)
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (4)
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (3)
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (2)
-            </label>
-            <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (1)
-            </label>
-
-        </div>
-    </aside>
-
-
+    <!-- FOOTER -->
+    <footer class="footer-container">
+        <img src="./img/logo.png" alt="">
+        <p>- Gracias por visitarnos</p>
+        <i class="fas fa-heart"></i>
+    </footer>
 
 
 </body>
