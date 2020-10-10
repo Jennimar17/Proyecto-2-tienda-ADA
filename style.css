@@ -6,7 +6,7 @@ body {
 }
 
 
-/* SECCION DE CESTA LLENA- DISPLAY BLOCK*/
+/* SECCION DE CESTA LLENA-DISPLAY NONE */
 
 .items-cest-container {
     width: 25%;
@@ -16,11 +16,12 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
-    z-index: 2;
     padding: 20px;
     font-family: 'Questrial', sans-serif;
     font-size: 15px;
     background-color: #ffffff;
+    z-index: 1;
+    display: none;
 }
 
 .title-cest {
