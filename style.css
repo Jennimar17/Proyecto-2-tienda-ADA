@@ -6,9 +6,11 @@ body {
 }
 
 
-/* .items-cest-container {
+/* SECCION DE CESTA LLENA- DISPLAY BLOCK*/
+
+.items-cest-container {
     width: 25%;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -17,46 +19,103 @@ body {
     z-index: 2;
     padding: 20px;
     font-family: 'Questrial', sans-serif;
+    font-size: 15px;
     background-color: #ffffff;
 }
 
 .title-cest {
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.title-cest i {
+    position: absolute;
+    right: 10px;
+}
+
+.cards-items {
+    overflow: scroll;
 }
 
 .items-add-container {
     width: 100%;
+    height: 130px;
     display: flex;
-    flex-direction: column;
-    background-color: rebeccapurple;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DCDCDC;
 }
 
 .items-add-img {
-    width: 40%;
-    height: 100%;
+    width: 130px;
 }
 
 .items-add-img img {
     width: 100%;
+    height: auto;
+}
+
+.title-trash-section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .items-add-description {
     width: 60%;
     display: flex;
-    align-items: center;
-    position: absolute;
-    right: 0px;
-    background-color: springgreen;
+    flex-direction: column;
+}
+
+.items-add-description h3 {
+    font-size: 15px;
 }
 
 .items-add-price {
-    width: 60%;
-    background-color: yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
- */
+
+.items-add-price input {
+    width: 40px;
+    height: 25px;
+}
+
+.unit-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unit-price p {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+
+/* BOTONES DE COMPRAR Y VACIAR CESTA*/
+
+.shop-button {
+    background-color: #CB1F7F;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.empty-shop-button {
+    background-color: #ffffff;
+    color: #CB1F7F;
+    border: 1px solid #CB1F7F;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+/* SECCION DE LOGO Y CESTA*/
 
 .header-container {
     width: 100%;
@@ -96,6 +155,9 @@ body {
     padding-right: 10px;
 }
 
+
+/* BANNER*/
+
 .banner {
     width: 100%;
     height: 330px;
@@ -121,6 +183,9 @@ body {
     display: flex;
     position: absolute;
 }
+
+
+/* SECCION PRINCIPAL*/
 
 .principal-section {
     width: 100%;
@@ -161,7 +226,6 @@ body {
     font-size: 20px;
     background-color: transparent;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: #CA1F7F;
 }
