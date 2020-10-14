@@ -8,6 +8,9 @@ body {
 
 /* SECCION DE CESTA LLENA-DISPLAY NONE */
 
+
+/* SECCION DE CESTA LLENA-DISPLAY NONE */
+
 .items-cest-container {
     width: 25%;
     height: auto;
@@ -21,7 +24,6 @@ body {
     font-size: 15px;
     background-color: #ffffff;
     z-index: 1;
-    display: none;
 }
 
 .title-cest {
@@ -192,12 +194,12 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .products-container {
-    width: 75%;
+    width: 80%;
     height: auto;
+    margin-left: 50px;
 }
 
 .filters-results-container {
@@ -293,8 +295,6 @@ body {
 .aside-container {
     width: 20%;
     height: 100%;
-    position: relative;
-    left: 0px;
 }
 
 .search-filters {
@@ -327,21 +327,20 @@ body {
 }
 
 #search-box-input {
-    width: 120%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-bottom: 2px solid #CA1F7F;
     background-color: transparent;
     text-align: center;
     font-size: 15px;
-    display: flex;
 }
 
-.search-box>button {
-    position: relative;
-    left: 15px;
-    top: 25px;
+.search-box button {
     color: #CA1F7F;
+    position: relative;
+    bottom: 30px;
+    left: 190px;
 }
 
 .filters-checkbox {
