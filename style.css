@@ -6,7 +6,87 @@ body {
 }
 
 
-/* SECCION DE CESTA LLENA-DISPLAY NONE */
+/* SECCION DE FORMULARIO DE COMPRA -DISPLAY NONE */
+
+.pay-form-section {
+    width: 60%;
+    height: 650px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    font-family: 'Questrial', sans-serif;
+    padding: 20px;
+    /* display: none; */
+}
+
+.personal-information-form {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.personal-information-form input {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding-left: 15px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+}
+
+.pay-options-form {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.pay-options-form input {
+    margin-top: 10px;
+}
+
+.total-resume-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-subtotal {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding-left: 20px;
+}
+
+#subtotal {
+    font-size: 20px;
+}
+
+#total {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.button-pay-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+#cancel-pay {
+    background-color: #CB1F7F;
+    color: #ffffff;
+    margin-left: 40px;
+}
 
 
 /* SECCION DE CESTA LLENA-DISPLAY NONE */
@@ -24,6 +104,7 @@ body {
     font-size: 15px;
     background-color: #ffffff;
     z-index: 1;
+    /*display: none;*/
 }
 
 .title-cest {

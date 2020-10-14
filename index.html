@@ -78,6 +78,52 @@
     </section>
 
     <!-- SECCION DE FORMULARIO DE COMPRA -->
+    <section class="pay-form-section">
+        <form>
+            <h2>Checkout</h2>
+            <div class="personal-information-form">
+                <h3>Datos Personales</h3>
+                <label>
+                    <p>Nombre y Apellido*</p>
+                    <input type="text" name="Nombre y Apellido" placeholder="p.ej: Juana de Arco" required />
+                </label>
+                <label>
+                    <p>Email*</p>
+                    <input type="mail" name="Email" placeholder="p.ej: juanadearco@gmail.com" required />
+                </label>
+            </div>
+
+            <div class="pay-options-form">
+                <h3>Opciones de Pago</h3>
+                <label>
+                    <input type="radio" name="payment" checked>Efectivo / Débito <br />
+                    <input type="radio" name="payment">Tarjeta de crédito<br />
+                    <input type="checkbox">Necesito envío<br />
+                    <input type="checkbox">Tengo tarjeta de descuento
+                </label>
+            </div>
+        </form>
+        <div class="total-resume-container">
+            <div class="total-subtotal">
+                <h3>Resumen</h3>
+                <div>
+                    <p id="subtotal">Subtotal $37000</p>
+                    <p id="total">Total $37000</p>
+                </div>
+            </div>
+            <div class="button-pay-group">
+                <button class="empty-shop-button">
+                    SEGUIR COMPRANDO
+                </button>
+                <button class="empty-shop-button" id="cancel-pay">
+                    FINALIZAR COMPRA
+                </button>
+
+            </div>
+
+
+        </div>
+    </section>
 
 
 
