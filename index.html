@@ -118,12 +118,25 @@
                 <button class="empty-shop-button" id="cancel-pay">
                     FINALIZAR COMPRA
                 </button>
-
             </div>
 
 
         </div>
     </section>
+
+    <!-- MODAL ALERTA -->
+
+    <div class="modal--alert">
+        <p class="modal--alert--message">Estás por vaciar el carrito, ¿quieres continuar?</p>
+        <div>
+            <button class="empty-shop-button" id="modal--button">
+                CANCELAR
+            </button>
+            <button class="shop-button" id="modal--button">
+                VACIAR
+            </button>
+        </div>
+    </div>
 
 
 
@@ -240,9 +253,9 @@
 
         <!-- SECCION DERECHA DE RESULTADOS DEL FILTRO Y PRODUCTOS -->
         <div class="products-container">
+
             <!-- RESULTADO DE FILTROS -->
             <div class="filters-results-container">
-
                 <p>Mostrando 12 producto(s) de 12</p>
                 <div class="buttons-filters-container">
                     <p>Ver como</p>
@@ -257,14 +270,14 @@
 
             <!-- CONTENEDOR DE LOS PRODUCTOS -->
             <div class="products-cards-section">
-                <!-- TARJETA DE PRODUCTOS -->
-                <article class="product-card">
-                    <!-- IMAGEN PRODUCTOS -->
+
+                <!-- VISTA CONTRAIDA TARJETA DE PRODUCTOS  -->
+
+                <!--<article class="product-card">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product1.jpg" alt="">
                         </div>
-                        <!-- DESCRIPCION DE PRODUCTOS -->
                         <div class="product-description">
                             <h3 class="product-title">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
                             <p>$14000</p>
@@ -303,6 +316,7 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="product-card">
                     <div class="product-information-container">
                         <div class="product-img">
@@ -521,7 +535,309 @@
                             </div>
                         </div>
                     </div>
+                </article> -->
+
+                <!-- VISTA CONTRAIDA TARJETA DE PRODUCTOS  -->
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
                 </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product2.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">OTOSCOPIO WELCH ALLYN POCKET LED</h3>
+                            <p class="product-price">$17000</p>
+                            <p class="product--explain--expand">El otoscopio de bolsillo más duradero del mercado actual, está diseñado para perdurar desde su entrenamiento hasta el consultorio. Resistente a caidas que otros equipos no toleran. Gracias al equilibrio correcto de la temperatura
+                                del color, el índice de reproducción cromática (IRC) y el brillo.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product--card--expand">
+                    <div class="product--information--container--expand">
+                        <div class="product--img--expand">
+                            <img src="./img/product1.jpg" alt="">
+                        </div>
+                        <div class="product--description--expand">
+                            <h3 class="product-title-">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
+                            <p class="product-price">$14000</p>
+                            <p class="product--explain--expand">El nuevo estetoscopio Littmann® Classic III ofrece alta sensibilidad acústica para un desempeño excepcional en las evaluaciones clínicas de los profesionales de la salud. Tiene diafragmas ajustables y un nuevo diseño que es
+                                más fácil de colocar y de limpiar debido a su superficie lisa y sin fisuras.
+                            </p>
+                            <div class="product-review">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="product-buy">
+                                <button class="buy-button button--expand">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
 
 
             </div>
