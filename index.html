@@ -125,7 +125,6 @@
     </section>
 
     <!-- MODAL ALERTA -->
-
     <div class="modal--alert">
         <p class="modal--alert--message">Estás por vaciar el carrito, ¿quieres continuar?</p>
         <div>
@@ -137,8 +136,6 @@
             </button>
         </div>
     </div>
-
-
 
     <!-- HEADER: LOGO Y CESTA -->
     <header class="header-container">
@@ -159,7 +156,6 @@
 
     <!-- SECCION PRINCIPAL CONTENEDORA DE ASIDE Y PRODUCTOS -->
     <section class="principal-section">
-
         <!-- ASIDE -->
         <aside class="aside-container">
             <div class="search-filters">
@@ -259,21 +255,19 @@
                 <p>Mostrando 12 producto(s) de 12</p>
                 <div class="buttons-filters-container">
                     <p>Ver como</p>
-                    <button class="button-filter">
+                    <button class="button-filter" id="button-view-zip">
                         <i class="fas fa-th"></i>
                     </button>
-                    <button class="button-filter">
+                    <button class="button-filter" id="button-view-expand">
                         <i class="fas fa-list"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- CONTENEDOR DE LOS PRODUCTOS -->
+            <!-- CONTENEDOR VISTA  COMPRIMIDA DE TARJETAS DE PRODUCTOS -->
             <div class="products-cards-section">
 
-                <!-- VISTA CONTRAIDA TARJETA DE PRODUCTOS  -->
-
-                <!--<article class="product-card">
+                <article class="product-card">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product1.jpg" alt="">
@@ -535,9 +529,13 @@
                             </div>
                         </div>
                     </div>
-                </article> -->
+                </article>
 
-                <!-- VISTA CONTRAIDA TARJETA DE PRODUCTOS  -->
+
+            </div>
+
+            <!-- CONTENEDOR VISTA EXPANDIDA DE TARJETAS DE PRODUCTOS  -->
+            <div class="products--cards--section">
                 <article class="product--card--expand">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
@@ -837,10 +835,8 @@
                         </div>
                     </div>
                 </article>
-
-
-
             </div>
+
         </div>
     </section>
 
@@ -851,6 +847,7 @@
         <i class="fas fa-heart"></i>
     </footer>
 
+    <script src="index.js"></script>
 
 </body>
 
