@@ -29,3 +29,34 @@ botonAbrirCesta.onclick = () => {
 botonCerrarCesta.onclick = () => {
     seccionCestaLlena.classList.add("ocultar")
 }
+
+const seccionformularioDeCompra = document.querySelector(".pay-form-section")
+const botonComprarDeLaCesta = document.getElementById("button-shop-cest")
+const botonCancelarCompraDelFormulario = document.getElementById("cancel-pay")
+const botonVaciarCesta = document.getElementById("button-empty-cest")
+const modalAlerta = document.querySelector(".modal--alert")
+const botonCancelarDelModalAlerta = document.getElementById("modal--button--cancel")
+const botonVaciarDelModalAlerta = document.getElementById("modal--button")
+
+seccionformularioDeCompra.classList.add("ocultar")
+modalAlerta.classList.add("ocultar")
+
+botonComprarDeLaCesta.onclick = () => {
+    seccionformularioDeCompra.classList.remove("ocultar")
+}
+
+botonCancelarCompraDelFormulario.onclick = () => {
+    seccionformularioDeCompra.classList.add("ocultar")
+}
+
+botonVaciarCesta.onclick = () => {
+    modalAlerta.classList.remove("ocultar")
+}
+
+botonCancelarDelModalAlerta.onclick = () => {
+    modalAlerta.classList.add("ocultar")
+}
+
+botonVaciarDelModalAlerta.onclick = () => {
+    modalAlerta.classList.add("ocultar")
+}

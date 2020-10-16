@@ -69,10 +69,10 @@
             </div>
         </div>
         <p>Subtotal $ 37000</p>
-        <button class="shop-button">
+        <button class="shop-button" id="button-shop-cest">
             COMPRAR
         </button>
-        <button class="empty-shop-button">
+        <button class="empty-shop-button" id="button-empty-cest">
             VACIAR
         </button>
     </section>
@@ -112,15 +112,13 @@
                 </div>
             </div>
             <div class="button-pay-group">
-                <button class="empty-shop-button">
+                <button class="empty-shop-button" id="cancel-pay">
                     SEGUIR COMPRANDO
                 </button>
-                <button class="empty-shop-button" id="cancel-pay">
+                <button class="empty-shop-button" id="finalize-pay">
                     FINALIZAR COMPRA
                 </button>
             </div>
-
-
         </div>
     </section>
 
@@ -128,7 +126,7 @@
     <div class="modal--alert">
         <p class="modal--alert--message">Estás por vaciar el carrito, ¿quieres continuar?</p>
         <div>
-            <button class="empty-shop-button" id="modal--button">
+            <button class="empty-shop-button" id="modal--button--cancel">
                 CANCELAR
             </button>
             <button class="shop-button" id="modal--button">

@@ -6,7 +6,7 @@ body {
 }
 
 
-/* SECCION DE FORMULARIO DE COMPRA -DISPLAY NONE */
+/* SECCION DE FORMULARIO DE COMPRA  */
 
 .pay-form-section {
     width: 60%;
@@ -20,7 +20,6 @@ body {
     z-index: 2;
     font-family: 'Questrial', sans-serif;
     padding: 20px;
-    display: none;
 }
 
 .personal-information-form {
@@ -82,7 +81,7 @@ body {
     margin-top: 30px;
 }
 
-#cancel-pay {
+#finalize-pay {
     background-color: #CB1F7F;
     color: #ffffff;
     margin-left: 40px;
@@ -174,7 +173,7 @@ body {
 }
 
 
-/*MODAL ALERTA  DISPLAY NONE*/
+/*MODAL ALERTA */
 
 .modal--alert {
     width: 500px;
@@ -193,10 +192,14 @@ body {
     text-align: center;
     padding: 30px;
     background-color: #ffffff;
-    display: none;
 }
 
 #modal--button {
+    width: 200px;
+    height: 50px;
+}
+
+#modal--button--cancel {
     width: 200px;
     height: 50px;
 }
