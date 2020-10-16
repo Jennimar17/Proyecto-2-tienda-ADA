@@ -89,7 +89,7 @@ body {
 }
 
 
-/* SECCION DE CESTA LLENA-DISPLAY NONE */
+/* SECCION DE CESTA LLENA */
 
 .items-cest-container {
     width: 25%;
@@ -104,18 +104,13 @@ body {
     font-size: 15px;
     background-color: #ffffff;
     z-index: 1;
-    display: none;
 }
 
 .title-cest {
-    width: 60%;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.title-cest i {
-    position: absolute;
-    right: 10px;
 }
 
 .cards-items {
