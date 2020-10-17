@@ -11,13 +11,19 @@
 
 <body>
 
+    <div id="overlay--first">
+    </div>
+
+    <div id="overlay--second">
+    </div>
+
     <!-- SECCION DE PRODUCTOS QUE APARECEN EN LA CESTA -->
     <section class="items-cest-container">
         <div class="title-cest">
             <h2>Cesta</h2>
             <button class="button-filter" id="button-close-cest">
-                <i class="fas fa-times"></i>
-            </button>
+                    <i class="fas fa-times"></i>
+                </button>
         </div>
         <p>2 Producto(s) agregado(s)</p>
         <div class="cards-items">
@@ -30,13 +36,13 @@
                     <div class="title-trash-section">
                         <h3>ESTETOSCOPIO LITTMANN </h3>
                         <button class="button-filter">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
                     </div>
                     <div class="items-add-price">
                         <label>
-                            <input type="number">
-                        </label>
+                                <input type="number">
+                            </label>
                         <div class="unit-price">
                             <p>unidades</p>
                             <p>$27000</p>
@@ -53,13 +59,13 @@
                     <div class="title-trash-section">
                         <h3>OTOSCOPIO WELCH ALLYN POCKET JUNIOR</h3>
                         <button class="button-filter">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
                     </div>
                     <div class="items-add-price">
                         <label>
-                            <input type="number">
-                        </label>
+                                <input type="number">
+                            </label>
                         <div class="unit-price">
                             <p>unidades</p>
                             <p>$10000</p>
@@ -70,11 +76,11 @@
         </div>
         <p>Subtotal $ 37000</p>
         <button class="shop-button" id="button-shop-cest">
-            COMPRAR
-        </button>
+                COMPRAR
+            </button>
         <button class="empty-shop-button" id="button-empty-cest">
-            VACIAR
-        </button>
+                VACIAR
+            </button>
     </section>
 
     <!-- SECCION DE FORMULARIO DE COMPRA -->
@@ -84,23 +90,23 @@
             <div class="personal-information-form">
                 <h3>Datos Personales</h3>
                 <label>
-                    <p>Nombre y Apellido*</p>
-                    <input type="text" name="Nombre y Apellido" placeholder="p.ej: Juana de Arco" required />
-                </label>
+                        <p>Nombre y Apellido*</p>
+                        <input type="text" name="Nombre y Apellido" placeholder="p.ej: Juana de Arco" required />
+                    </label>
                 <label>
-                    <p>Email*</p>
-                    <input type="mail" name="Email" placeholder="p.ej: juanadearco@gmail.com" required />
-                </label>
+                        <p>Email*</p>
+                        <input type="mail" name="Email" placeholder="p.ej: juanadearco@gmail.com" required />
+                    </label>
             </div>
 
             <div class="pay-options-form">
                 <h3>Opciones de Pago</h3>
                 <label>
-                    <input type="radio" name="payment" checked>Efectivo / Débito <br />
-                    <input type="radio" name="payment">Tarjeta de crédito<br />
-                    <input type="checkbox">Necesito envío<br />
-                    <input type="checkbox">Tengo tarjeta de descuento
-                </label>
+                        <input type="radio" name="payment" checked>Efectivo / Débito <br />
+                        <input type="radio" name="payment">Tarjeta de crédito<br />
+                        <input type="checkbox">Necesito envío<br />
+                        <input type="checkbox">Tengo tarjeta de descuento
+                    </label>
             </div>
         </form>
         <div class="total-resume-container">
@@ -113,11 +119,11 @@
             </div>
             <div class="button-pay-group">
                 <button class="empty-shop-button" id="cancel-pay">
-                    SEGUIR COMPRANDO
-                </button>
+                        SEGUIR COMPRANDO
+                    </button>
                 <button class="empty-shop-button" id="finalize-pay">
-                    FINALIZAR COMPRA
-                </button>
+                        FINALIZAR COMPRA
+                    </button>
             </div>
         </div>
     </section>
@@ -127,11 +133,11 @@
         <p class="modal--alert--message">Estás por vaciar el carrito, ¿quieres continuar?</p>
         <div>
             <button class="empty-shop-button" id="modal--button--cancel">
-                CANCELAR
-            </button>
+                    CANCELAR
+                </button>
             <button class="shop-button" id="modal--button">
-                VACIAR
-            </button>
+                    VACIAR
+                </button>
         </div>
     </div>
 
@@ -139,92 +145,92 @@
     <aside class="aside--container--right">
         <div class="button--close--filters--container">
             <button class="button-filter" id="button--close--filters">
-                <i class="fas fa-times"></i>
-            </button>
+                    <i class="fas fa-times"></i>
+                </button>
         </div>
         <div class="search--filters">
             <h2>FILTROS</h2>
             <button class="button-filter">
-                <i class="fas fa-trash-alt"></i>
-                <p>Limpiar</p>
-            </button>
+                    <i class="fas fa-trash-alt"></i>
+                    <p>Limpiar</p>
+                </button>
         </div>
         <div class="search-box">
             <label>
-                <h3>BÚSQUEDA</h3>
-                <input type="text" placeholder="Buscar Productos" id="search-box-input" />
-                <button class="button-filter">
-                    <i class="fas fa-search"></i>
-                </button>
-            </label>
+                    <h3>BÚSQUEDA</h3>
+                    <input type="text" placeholder="Buscar Productos" id="search-box-input" />
+                    <button class="button-filter">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </label>
         </div>
 
         <div class="filters-checkbox">
             <h3>CATEGORÍA</h3>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />Otoscopios
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />Otoscopios
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />Oxímetros
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />Oxímetros
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />Descartables
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />Descartables
+                </label>
         </div>
 
         <div class="filters-checkbox">
             <h3>PUNTAJE</h3>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                (5)
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    (5)
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (4)
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (4)
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (3)
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (3)
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (2)
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (2)
+                </label>
             <label>
-                <input type="checkbox" class="filters-checkbox-items" />
-                <i class="fas fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-heart"></i>
-                (1)
-            </label>
+                    <input type="checkbox" class="filters-checkbox-items" />
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart"></i>
+                    (1)
+                </label>
         </div>
     </aside>
 
@@ -236,9 +242,9 @@
         </div>
 
         <button class="shopping-basket-section">
-            <i class="fas fa-shopping-basket"></i>
-            <p>Cesta (2 Items)</p>
-        </button>
+                <i class="fas fa-shopping-basket"></i>
+                <p>Cesta (2 Items)</p>
+            </button>
     </header>
 
     <!-- BANNER -->
@@ -254,87 +260,87 @@
             <div class="search-filters">
                 <h2>FILTROS</h2>
                 <button class="button-filter">
-                    <i class="fas fa-trash-alt"></i>
-                    <p>Limpiar</p>
-                </button>
+                        <i class="fas fa-trash-alt"></i>
+                        <p>Limpiar</p>
+                    </button>
             </div>
 
             <div class="search-box">
                 <label>
-                    <h3>BÚSQUEDA</h3>
-                    <input type="text" placeholder="Buscar Productos" id="search-box-input" />
-                    <button class="button-filter">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </label>
+                        <h3>BÚSQUEDA</h3>
+                        <input type="text" placeholder="Buscar Productos" id="search-box-input" />
+                        <button class="button-filter">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </label>
             </div>
 
             <div class="filters-checkbox">
                 <h3>CATEGORÍA</h3>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Otoscopios
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />Otoscopios
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Oxímetros
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />Oxímetros
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Descartables
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />Descartables
+                    </label>
             </div>
 
             <div class="filters-checkbox">
                 <h3>PUNTAJE</h3>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    (5)
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        (5)
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    (4)
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        (4)
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    (3)
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        (3)
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    (2)
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        (2)
+                    </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    (1)
-                </label>
+                        <input type="checkbox" class="filters-checkbox-items" />
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        (1)
+                    </label>
             </div>
         </aside>
 
@@ -348,18 +354,18 @@
 
                     <!-- BOTON DISPLAY NONE APARECE EN MEDIA QUERY -->
                     <button id="button--view--aside--filters">
-                        <i class="fas fa-filter"></i>
-                        <p>Filtros</p>
-                    </button>
+                            <i class="fas fa-filter"></i>
+                            <p>Filtros</p>
+                        </button>
 
                     <p id="text-button-view">Ver como</p>
                     <button class="button-filter" id="button-view-zip">
-                        <i class="fas fa-th"></i>
-                    </button>
+                            <i class="fas fa-th"></i>
+                        </button>
 
                     <button class="button-filter" id="button-view-expand">
-                        <i class="fas fa-list"></i>
-                    </button>
+                            <i class="fas fa-list"></i>
+                        </button>
                 </div>
             </div>
 
@@ -946,7 +952,9 @@
         <i class="fas fa-heart"></i>
     </footer>
 
+
     <script src="index.js"></script>
+
 
 </body>
 

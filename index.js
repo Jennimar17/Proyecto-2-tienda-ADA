@@ -19,15 +19,23 @@ botonVistaComprimida.onclick = () => {
 const seccionCestaLlena = document.querySelector(".items-cest-container")
 const botonAbrirCesta = document.querySelector(".shopping-basket-section")
 const botonCerrarCesta = document.getElementById("button-close-cest")
+const primerOverlay = document.getElementById("overlay--first")
+
 
 seccionCestaLlena.classList.add("ocultar")
+primerOverlay.classList.add("ocultar")
 
 botonAbrirCesta.onclick = () => {
     seccionCestaLlena.classList.remove("ocultar")
+    primerOverlay.classList.remove("ocultar")
+
+
+
 }
 
 botonCerrarCesta.onclick = () => {
     seccionCestaLlena.classList.add("ocultar")
+    primerOverlay.classList.add("ocultar")
 }
 
 const seccionformularioDeCompra = document.querySelector(".pay-form-section")
@@ -37,28 +45,39 @@ const botonVaciarCesta = document.getElementById("button-empty-cest")
 const modalAlerta = document.querySelector(".modal--alert")
 const botonCancelarDelModalAlerta = document.getElementById("modal--button--cancel")
 const botonVaciarDelModalAlerta = document.getElementById("modal--button")
+const segundoOverlay = document.getElementById("overlay--second")
+
+segundoOverlay.classList.add("ocultar")
 
 seccionformularioDeCompra.classList.add("ocultar")
 modalAlerta.classList.add("ocultar")
 
 botonComprarDeLaCesta.onclick = () => {
     seccionformularioDeCompra.classList.remove("ocultar")
+    segundoOverlay.classList.remove("ocultar")
+
 }
 
 botonCancelarCompraDelFormulario.onclick = () => {
     seccionformularioDeCompra.classList.add("ocultar")
+    segundoOverlay.classList.add("ocultar")
 }
 
 botonVaciarCesta.onclick = () => {
     modalAlerta.classList.remove("ocultar")
+    segundoOverlay.classList.remove("ocultar")
+
 }
 
 botonCancelarDelModalAlerta.onclick = () => {
     modalAlerta.classList.add("ocultar")
+    segundoOverlay.classList.add("ocultar")
 }
 
 botonVaciarDelModalAlerta.onclick = () => {
     modalAlerta.classList.add("ocultar")
+    segundoOverlay.classList.add("ocultar")
+
 }
 
 const botonAbrirFiltro = document.getElementById("button--view--aside--filters")
