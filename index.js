@@ -60,3 +60,17 @@ botonCancelarDelModalAlerta.onclick = () => {
 botonVaciarDelModalAlerta.onclick = () => {
     modalAlerta.classList.add("ocultar")
 }
+
+const botonAbrirFiltro = document.getElementById("button--view--aside--filters")
+const botonCerrarFiltro = document.getElementById("button--close--filters")
+const asideFiltrosDerecha = document.querySelector(".aside--container--right")
+
+asideFiltrosDerecha.classList.add("ocultar")
+
+botonAbrirFiltro.onclick = () => {
+    asideFiltrosDerecha.classList.remove("ocultar")
+}
+
+botonCerrarFiltro.onclick = () => {
+    asideFiltrosDerecha.classList.add("ocultar")
+}
