@@ -22,20 +22,21 @@ const botonCerrarCesta = document.getElementById("button-close-cest")
 const primerOverlay = document.getElementById("overlay--first")
 
 
+
 seccionCestaLlena.classList.add("ocultar")
 primerOverlay.classList.add("ocultar")
 
 botonAbrirCesta.onclick = () => {
     seccionCestaLlena.classList.remove("ocultar")
     primerOverlay.classList.remove("ocultar")
-
-
+    document.getElementsByTagName("html")[0].style.overflow = "hidden"
 
 }
 
 botonCerrarCesta.onclick = () => {
     seccionCestaLlena.classList.add("ocultar")
     primerOverlay.classList.add("ocultar")
+    document.getElementsByTagName("html")[0].style.overflow = "auto"
 }
 
 const seccionformularioDeCompra = document.querySelector(".pay-form-section")
