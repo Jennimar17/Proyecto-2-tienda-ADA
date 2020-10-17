@@ -348,12 +348,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: rebeccapurple;
 }
 
 .product-card {
     width: 320px;
-    height: 550px;
-    background-color: #ffffff;
+    background-color: yellow;
     font-family: 'Questrial', sans-serif;
     display: flex;
     justify-content: center;
@@ -554,5 +554,11 @@ body {
     }
     .buttons-filters-container {
         display: none;
+    }
+    .products-cards-section {
+        width: 100%;
+    }
+    .product-card {
+        width: 100%;
     }
 }
