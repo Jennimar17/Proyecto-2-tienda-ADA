@@ -91,7 +91,7 @@ body {
 /* SECCION DE CESTA LLENA */
 
 .items-cest-container {
-    width: 25%;
+    width: 350px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -160,6 +160,9 @@ body {
 .items-add-price input {
     width: 40px;
     height: 25px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .unit-price {
@@ -640,5 +643,8 @@ body {
     }
     #text-button-view {
         display: none;
+    }
+    .items-cest-container {
+        width: 95%;
     }
 }
