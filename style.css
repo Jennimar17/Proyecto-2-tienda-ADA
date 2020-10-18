@@ -9,16 +9,15 @@ body {
 /* SECCION DE FORMULARIO DE COMPRA  */
 
 .pay-form-section {
-    width: 60%;
-    height: 650px;
+    width: 800px;
+    height: 100vh;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
-    margin-left: 300px;
-    position: fixed;
+    justify-content: center;
+    position: relative;
     top: 0px;
+    left: 300px;
     font-family: 'Questrial', sans-serif;
-    padding: 20px;
     z-index: 3;
 }
 
@@ -50,7 +49,6 @@ body {
 }
 
 .total-resume-container {
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,14 +75,14 @@ body {
 
 .button-pay-group {
     display: flex;
-    justify-content: flex-end;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #finalize-pay {
     background-color: #CB1F7F;
     color: #ffffff;
-    margin-left: 40px;
+    margin-left: 5px;
 }
 
 
@@ -646,5 +644,20 @@ body {
     }
     .items-cest-container {
         width: 95%;
+    }
+    .pay-form-section {
+        flex-wrap: wrap;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        font-family: 'Questrial', sans-serif;
+        margin-bottom: 50px;
+    }
+    .total-subtotal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #F5F5F5;
+        padding-left: 20px;
     }
 }
