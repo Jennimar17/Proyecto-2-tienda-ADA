@@ -89,8 +89,12 @@ asideFiltrosDerecha.classList.add("ocultar")
 
 botonAbrirFiltro.onclick = () => {
     asideFiltrosDerecha.classList.remove("ocultar")
+    primerOverlay.classList.remove("ocultar")
+    document.getElementsByTagName("html")[0].style.overflow = "hidden"
+
 }
 
 botonCerrarFiltro.onclick = () => {
     asideFiltrosDerecha.classList.add("ocultar")
+    primerOverlay.classList.add("ocultar")
 }
