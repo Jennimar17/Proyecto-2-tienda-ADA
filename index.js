@@ -104,9 +104,11 @@ const buscarProductosDerecha = document.querySelector("#search-box-input-right")
 const tarjetasDeProductosContraida = document.getElementsByClassName("product-card")
 const tarjetasDeProductosExpandida = document.getElementsByClassName("product--card--expand")
 const filtrarPorReview = document.getElementsByClassName("filters-checkbox-review")
-const checkboxesDelReview = document.querySelectorAll(".filters-checkbox-review")
-console.log(filtrarPorReview)
+const botonBorrarFiltros = document.getElementById("button-clean-filters")
+const botonBorrarFiltrosDerecha = document.getElementById("button-clean-filters-right")
 
+const reviewCheckbox = document.querySelectorAll(".filters-checkbox-review")
+console.log(botonBorrarFiltros)
 
 buscarProductosIzquierda.oninput = () => {
     for (let tarjeta of tarjetasDeProductosContraida) {
@@ -144,7 +146,7 @@ buscarProductosDerecha.oninput = () => {
 
 for (let checkbox of filtrarPorReview) {
     checkbox.onclick = () => {
-        filtrarTarjetas()
+        filtrarTarjetasReview()
     }
 }
 
@@ -165,7 +167,7 @@ const conincideCheckboxYTarjeta = tarjeta => {
     }
 }
 
-const filtrarTarjetas = () => {
+const filtrarTarjetasReview = () => {
     for (let tarjeta of tarjetasDeProductosContraida) {
         tarjeta.classList.add("ocultar")
         if (hayCheckboxSeleccionado()) {
@@ -176,17 +178,20 @@ const filtrarTarjetas = () => {
             tarjeta.classList.remove("ocultar")
         }
     }
+}
 
-    for (let tarjeta of tarjetasDeProductosExpandida) {
-        tarjeta.classList.add("ocultar")
-        if (hayCheckboxSeleccionado()) {
-            if (conincideCheckboxYTarjeta(tarjeta)) {
-                tarjeta.classList.remove("ocultar")
-            }
-        } else {
-            tarjeta.classList.remove("ocultar")
-        }
+botonBorrarFiltros.onclick = () => {
+    buscarProductosIzquierda.value = ""
+    for (let checkbox of reviewCheckbox) {
+        checkbox.checked = false
     }
+    tarjeta.classList.remove("ocultar")
+}
 
-
+botonBorrarFiltrosDerecha.onclick = () => {
+    buscarProductosDerecha.value = ""
+    for (let checkbox of reviewCheckbox) {
+        checkbox.checked = false
+    }
+    tarjeta.classList.remove("ocultar")
 }
