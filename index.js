@@ -103,6 +103,10 @@ const buscarProductosIzquierda = document.querySelector("#search-box-input-left"
 const buscarProductosDerecha = document.querySelector("#search-box-input-right")
 const tarjetasDeProductosContraida = document.getElementsByClassName("product-card")
 const tarjetasDeProductosExpandida = document.getElementsByClassName("product--card--expand")
+const filtrarPorReview = document.getElementsByClassName("filters-checkbox-review")
+const checkboxesDelReview = document.querySelectorAll(".filters-checkbox-review")
+console.log(filtrarPorReview)
+
 
 buscarProductosIzquierda.oninput = () => {
     for (let tarjeta of tarjetasDeProductosContraida) {
@@ -136,4 +140,53 @@ buscarProductosDerecha.oninput = () => {
             tarjeta.classList.add("ocultar")
         }
     }
+}
+
+for (let checkbox of filtrarPorReview) {
+    checkbox.onclick = () => {
+        filtrarTarjetas()
+    }
+}
+
+const hayCheckboxSeleccionado = () => {
+    for (let checkbox of filtrarPorReview) {
+        if (checkbox.checked) {
+            return true
+        }
+    }
+}
+
+const conincideCheckboxYTarjeta = tarjeta => {
+    const review = tarjeta.dataset.review
+    for (let checkbox of filtrarPorReview) {
+        if (checkbox.value === review && checkbox.checked) {
+            return true
+        }
+    }
+}
+
+const filtrarTarjetas = () => {
+    for (let tarjeta of tarjetasDeProductosContraida) {
+        tarjeta.classList.add("ocultar")
+        if (hayCheckboxSeleccionado()) {
+            if (conincideCheckboxYTarjeta(tarjeta)) {
+                tarjeta.classList.remove("ocultar")
+            }
+        } else {
+            tarjeta.classList.remove("ocultar")
+        }
+    }
+
+    for (let tarjeta of tarjetasDeProductosExpandida) {
+        tarjeta.classList.add("ocultar")
+        if (hayCheckboxSeleccionado()) {
+            if (conincideCheckboxYTarjeta(tarjeta)) {
+                tarjeta.classList.remove("ocultar")
+            }
+        } else {
+            tarjeta.classList.remove("ocultar")
+        }
+    }
+
+
 }

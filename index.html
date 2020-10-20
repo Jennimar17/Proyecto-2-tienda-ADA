@@ -159,7 +159,7 @@
         <div class="search-box">
             <label>
                 <h3>BÚSQUEDA</h3>
-                <input type="text" id="search-box-input-right" placeholder="Buscar Productos"  />
+                <input type="text" id="search-box-input-right" placeholder="Buscar Productos" />
                 <button class="button-filter">
                     <i class="fas fa-search"></i>
                 </button>
@@ -269,7 +269,7 @@
             <div class="search-box">
                 <label>
                     <h3>BÚSQUEDA</h3>
-                    <input type="text" id="search-box-input-left"  placeholder="Buscar Productos" />
+                    <input type="text" id="search-box-input-left" placeholder="Buscar Productos" />
                     <button class="button-filter">
                         <i class="fas fa-search"></i>
                     </button>
@@ -279,67 +279,77 @@
             <div class="filters-checkbox">
                 <h3>CATEGORÍA</h3>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Estetoscopios
+                    <input type="checkbox" class="filters-checkbox-category" />Estetoscopios
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Otoscopios
+                    <input type="checkbox" class="filters-checkbox-category" />Otoscopios
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Tensiómetros
+                    <input type="checkbox" class="filters-checkbox-category" />Tensiómetros
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Oxímetros
+                    <input type="checkbox" class="filters-checkbox-category" />Oxímetros
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />Descartables
+                    <input type="checkbox" class="filters-checkbox-category" />Descartables
                 </label>
             </div>
 
             <div class="filters-checkbox">
                 <h3>PUNTAJE</h3>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
+                    <input type="checkbox" class="filters-checkbox-review" value="5" id="checkbox-5" />
+                    <span class="product-review">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </span>
                     (5)
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
+                    <input type="checkbox" class="filters-checkbox-review" value="4" id="checkbox-4" />
+                    <span class="product-review">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                    </span>
                     (4)
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
+                    <input type="checkbox" class="filters-checkbox-review" value="3" id="checkbox-3" />
+                    <span class="product-review">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                    </span>
                     (3)
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-heart"></i>
+                    <input type="checkbox" class="filters-checkbox-review" value="2" id="checkbox-2" />
+                    <span class="product-review">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart"></i>
+                    </span>
                     (2)
                 </label>
                 <label>
-                    <input type="checkbox" class="filters-checkbox-items" />
+                    <input type="checkbox" class="filters-checkbox-review" value="1" id="checkbox-1" />
+                    <span class="product-review">
                     <i class="fas fa-heart"></i>
                     <i class="far fa-heart"></i>
                     <i class="far fa-heart"></i>
                     <i class="far fa-heart"></i>
                     <i class="far fa-heart"></i>
+                    </span>
                     (1)
                 </label>
             </div>
@@ -381,7 +391,7 @@
                         <div class="product-description">
                             <h3 class="product-title">ESTETOSCOPIO LITTMANN CLASSIC III FRAMBUESA</h3>
                             <p>$14000</p>
-                            <div>
+                            <div class="review">
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
@@ -403,7 +413,7 @@
                         <div class="product-description">
                             <h3 class="product-title">OTOSCOPIO WELCH ALLYN POCKET LED</h3>
                             <p class="product-price">$17000</p>
-                            <div class="product-review">
+                            <div class="review">
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
@@ -425,7 +435,7 @@
                         <div class="product-description">
                             <h3 class="product-title">TENSIOMETRO ANEROIDE PEDIATRICO SILBAF</h3>
                             <p class="product-price">$1600</p>
-                            <div class="product-review">
+                            <div class="review">
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
                                 <i class="far fa-heart"></i>
@@ -447,7 +457,7 @@
                         <div class="product-description">
                             <h3 class="product-title">OXIMETRO DE PULSO NEL P/ADULTO </h3>
                             <p class="product-price">$2000</p>
-                            <div class="product-review">
+                            <div class="review">
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
