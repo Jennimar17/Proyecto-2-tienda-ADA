@@ -90,11 +90,50 @@ asideFiltrosDerecha.classList.add("ocultar")
 botonAbrirFiltro.onclick = () => {
     asideFiltrosDerecha.classList.remove("ocultar")
     primerOverlay.classList.remove("ocultar")
-    document.getElementsByTagName("html")[0].style.overflow = "hidden"
+
 
 }
 
 botonCerrarFiltro.onclick = () => {
     asideFiltrosDerecha.classList.add("ocultar")
     primerOverlay.classList.add("ocultar")
+}
+
+const buscarProductosIzquierda = document.querySelector("#search-box-input-left")
+const buscarProductosDerecha = document.querySelector("#search-box-input-right")
+const tarjetasDeProductosContraida = document.getElementsByClassName("product-card")
+const tarjetasDeProductosExpandida = document.getElementsByClassName("product--card--expand")
+
+buscarProductosIzquierda.oninput = () => {
+    for (let tarjeta of tarjetasDeProductosContraida) {
+        const titulo = tarjeta.dataset.nombre
+        const busquedaIzquierda = buscarProductosIzquierda.value
+        if (titulo.includes(busquedaIzquierda)) {
+            tarjeta.classList.remove("ocultar")
+        } else {
+            tarjeta.classList.add("ocultar")
+        }
+    }
+
+    for (let tarjeta of tarjetasDeProductosExpandida) {
+        const titulo = tarjeta.dataset.nombre
+        const busquedaIzquierda = buscarProductosIzquierda.value
+        if (titulo.includes(busquedaIzquierda)) {
+            tarjeta.classList.remove("ocultar")
+        } else {
+            tarjeta.classList.add("ocultar")
+        }
+    }
+}
+
+buscarProductosDerecha.oninput = () => {
+    for (let tarjeta of tarjetasDeProductosContraida) {
+        const titulo = tarjeta.dataset.nombre
+        const busquedaDerecha = buscarProductosDerecha.value
+        if (titulo.includes(busquedaDerecha)) {
+            tarjeta.classList.remove("ocultar")
+        } else {
+            tarjeta.classList.add("ocultar")
+        }
+    }
 }

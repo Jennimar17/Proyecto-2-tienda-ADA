@@ -86,7 +86,7 @@
 
     <!-- SECCION DE FORMULARIO DE COMPRA -->
     <section class="pay-form-section">
-        <form>
+        <form id="pay-form">
             <h2>Checkout</h2>
             <div class="personal-information-form">
                 <h3>Datos Personales</h3>
@@ -109,14 +109,6 @@
                     <input type="checkbox">Tengo tarjeta de descuento
                 </label>
             </div>
-            <div class="button-pay-group">
-                <button class="empty-shop-button" id="cancel-pay">
-                    SEGUIR COMPRANDO
-                </button>
-                <button type="submit" class="empty-shop-button" id="finalize-pay">
-                    FINALIZAR COMPRA
-                </button>
-            </div>
         </form>
         <div class="total-resume-container">
             <div class="total-subtotal">
@@ -125,6 +117,14 @@
                     <p id="subtotal">Subtotal $37000</p>
                     <p id="total">Total $37000</p>
                 </div>
+            </div>
+            <div class="button-pay-group">
+                <button class="empty-shop-button" id="cancel-pay">
+                    SEGUIR COMPRANDO
+                </button>
+                <button type="submit" form="pay-form" class="empty-shop-button" id="finalize-pay">
+                    FINALIZAR COMPRA
+                </button>
             </div>
         </div>
     </section>
@@ -159,7 +159,7 @@
         <div class="search-box">
             <label>
                 <h3>BÚSQUEDA</h3>
-                <input type="text" placeholder="Buscar Productos" id="search-box-input" />
+                <input type="text" id="search-box-input-right" placeholder="Buscar Productos"  />
                 <button class="button-filter">
                     <i class="fas fa-search"></i>
                 </button>
@@ -269,7 +269,7 @@
             <div class="search-box">
                 <label>
                     <h3>BÚSQUEDA</h3>
-                    <input type="text" placeholder="Buscar Productos" id="search-box-input" />
+                    <input type="text" id="search-box-input-left"  placeholder="Buscar Productos" />
                     <button class="button-filter">
                         <i class="fas fa-search"></i>
                     </button>
@@ -373,7 +373,7 @@
             <!-- CONTENEDOR VISTA  COMPRIMIDA DE TARJETAS DE PRODUCTOS -->
             <div class="products-cards-section">
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="estetoscopio" data-categoria="estetoscopios" data-precio="14000" data-review="3">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product1.jpg" alt="">
@@ -395,7 +395,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="otoscopio" data-categoria="otoscopios" data-precio="17000" data-review="5">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product2.jpg" alt="">
@@ -417,7 +417,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="tensiometro" data-categoria="tensiometros" data-precio="1600" data-review="2">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product3.jpg" alt="">
@@ -439,7 +439,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="oximetro" data-categoria="oximetros" data-precio="2000" data-review="3">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product4.jpg" alt="">
@@ -461,7 +461,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="estetoscopio" data-categoria="estetoscopios" data-precio="27000" data-review="5">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product5.jpg" alt="">
@@ -483,7 +483,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="otoscopio" data-categoria="otoscopios" data-precio="10000" data-review="1">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product6.jpg" alt="">
@@ -505,7 +505,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="tapaboca" data-categoria="descartables" data-precio="500" data-review="3">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product7.jpg" alt="">
@@ -527,7 +527,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="tensiometro" data-categoria="tensiometros" data-precio="5000" data-review="2">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product8.jpg" alt="">
@@ -549,7 +549,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="estetoscopio" data-categoria="estetoscopios" data-precio="30000" data-review="4">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product9.jpg" alt="">
@@ -571,7 +571,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="otoscopio" data-categoria="otoscopios" data-precio="26000" data-review="3">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product10.jpg" alt="">
@@ -593,7 +593,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="guantes" data-categoria="descartables" data-precio="32" data-review="4">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product11.jpg" alt="">
@@ -615,7 +615,7 @@
                     </div>
                 </article>
 
-                <article class="product-card">
+                <article class="product-card" data-nombre="tela" data-categoria="descartables" data-precio="193" data-review="5">
                     <div class="product-information-container">
                         <div class="product-img">
                             <img src="./img/product12.jpg" alt="">
@@ -642,7 +642,8 @@
 
             <!-- CONTENEDOR VISTA EXPANDIDA DE TARJETAS DE PRODUCTOS  -->
             <div class="products--cards--section">
-                <article class="product--card--expand">
+
+                <article class="product--card--expand" data-nombre="estetoscopio" data-categoria="estetoscopios" data-precio="14000" data-review="3">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product1.jpg" alt="">
@@ -667,7 +668,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="otoscopio" data-categoria="otoscopios" data-precio="17000" data-review="5">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product2.jpg" alt="">
@@ -692,14 +693,14 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="tensiometro" data-categoria="tensiometros" data-precio="1600" data-review="2">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product3.jpg" alt="">
                         </div>
                         <div class="product--description--expand">
                             <h3 class="product-title-">TENSIOMETRO ANEROIDE PEDIATRICO SILBAF</h3>
-                            <p class="product-price">$16000</p>
+                            <p class="product-price">$1600</p>
                             <p class="product--explain--expand">Manómetro hecho de aleación de aluminio con 47 mm de diámetro Manga estampada de algodón pediátrica para hacer más divertida la consulta. Inlcuye un estetoscopio simple con el tubo hecho en PVC, cuenta con campana plana, anonizada
                                 en aluminio. Contiene tensiómetro + estuche.
                             </p>
@@ -717,7 +718,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="oximetro" data-categoria="oximetros" data-precio="2000" data-review="3">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product4.jpg" alt="">
@@ -742,7 +743,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="estetoscopio" data-categoria="estetoscopios" data-precio="27000" data-review="5">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product5.jpg" alt="">
@@ -767,7 +768,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="otoscopio" data-categoria="otoscopios" data-precio="10000" data-review="1">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product6.jpg" alt="">
@@ -792,7 +793,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="tapaboca" data-categoria="descartables" data-precio="500" data-review="3">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product7.jpg" alt="">
@@ -807,7 +808,7 @@
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
                                 <i class="fas fa-heart"></i>
-                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
                                 <i class="far fa-heart"></i>
                             </div>
                             <div class="product-buy">
@@ -817,7 +818,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="tensiometro" data-categoria="tensiometros" data-precio="5000" data-review="2">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product8.jpg" alt="">
@@ -842,7 +843,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="estetoscopio" data-categoria="estetoscopios" data-precio="30000" data-review="4">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product9.jpg" alt="">
@@ -867,7 +868,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="otoscopio" data-categoria="otoscopios" data-precio="26000" data-review="3">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product10.jpg" alt="">
@@ -892,7 +893,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="guantes" data-categoria="descartables" data-precio="32" data-review="4">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product11.jpg" alt="">
@@ -917,7 +918,7 @@
                     </div>
                 </article>
 
-                <article class="product--card--expand">
+                <article class="product--card--expand" data-nombre="tela" data-categoria="descartables" data-precio="193" data-review="5">
                     <div class="product--information--container--expand">
                         <div class="product--img--expand">
                             <img src="./img/product12.jpg" alt="">
