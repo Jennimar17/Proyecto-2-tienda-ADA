@@ -2,6 +2,7 @@ const botonVistaComprimida = document.getElementById("button-view-zip")
 const botonVistaExpandida = document.getElementById("button-view-expand")
 const seccionTarjetasComprimidas = document.querySelector(".products-cards-section")
 const seccionTarjetasExpandidas = document.querySelector(".products--cards--section")
+const bodyDelDocumento = document.querySelector(".body")
 
 seccionTarjetasExpandidas.classList.add("ocultar")
 
@@ -27,6 +28,7 @@ seccionCestaLlena.classList.add("ocultar")
 primerOverlay.classList.add("ocultar")
 
 botonAbrirCesta.onclick = () => {
+    bodyDelDocumento.classList.add("overflow-hidden")
     seccionCestaLlena.classList.remove("ocultar")
     primerOverlay.classList.remove("ocultar")
     document.getElementsByTagName("html")[0].style.overflow = "hidden"
@@ -34,6 +36,7 @@ botonAbrirCesta.onclick = () => {
 }
 
 botonCerrarCesta.onclick = () => {
+    bodyDelDocumento.classList.remove("overflow-hidden")
     seccionCestaLlena.classList.add("ocultar")
     primerOverlay.classList.add("ocultar")
     document.getElementsByTagName("html")[0].style.overflow = "auto"
@@ -88,6 +91,7 @@ const asideFiltrosDerecha = document.querySelector(".aside--container--right")
 asideFiltrosDerecha.classList.add("ocultar")
 
 botonAbrirFiltro.onclick = () => {
+    bodyDelDocumento.classList.add("overflow-hidden")
     asideFiltrosDerecha.classList.remove("ocultar")
     primerOverlay.classList.remove("ocultar")
 
@@ -95,6 +99,7 @@ botonAbrirFiltro.onclick = () => {
 }
 
 botonCerrarFiltro.onclick = () => {
+    bodyDelDocumento.classList.remove("overflow-hidden")
     asideFiltrosDerecha.classList.add("ocultar")
     primerOverlay.classList.add("ocultar")
 }
@@ -106,7 +111,8 @@ const tarjetasDeProductosExpandida = document.getElementsByClassName("product--c
 const filtrarPorReview = document.getElementsByClassName("filters-checkbox-review")
 const botonBorrarFiltros = document.getElementById("button-clean-filters")
 const botonBorrarFiltrosDerecha = document.getElementById("button-clean-filters-right")
-
+const filtrarPorCategoria = document.getElementsByClassName("filters-checkbox-category")
+const categoriaCheckbox = document.querySelectorAll(".filters-checkbox-category")
 const reviewCheckbox = document.querySelectorAll(".filters-checkbox-review")
 console.log(botonBorrarFiltros)
 
@@ -150,6 +156,7 @@ for (let checkbox of filtrarPorReview) {
     }
 }
 
+
 const hayCheckboxSeleccionado = () => {
     for (let checkbox of filtrarPorReview) {
         if (checkbox.checked) {
@@ -157,6 +164,7 @@ const hayCheckboxSeleccionado = () => {
         }
     }
 }
+
 
 const conincideCheckboxYTarjeta = tarjeta => {
     const review = tarjeta.dataset.review
@@ -166,6 +174,7 @@ const conincideCheckboxYTarjeta = tarjeta => {
         }
     }
 }
+
 
 const filtrarTarjetasReview = () => {
     for (let tarjeta of tarjetasDeProductosContraida) {
@@ -178,14 +187,78 @@ const filtrarTarjetasReview = () => {
             tarjeta.classList.remove("ocultar")
         }
     }
+
+    for (let tarjeta of tarjetasDeProductosExpandida) {
+        tarjeta.classList.add("ocultar")
+        if (hayCheckboxSeleccionado()) {
+            if (conincideCheckboxYTarjeta(tarjeta)) {
+                tarjeta.classList.remove("ocultar")
+            }
+        } else {
+            tarjeta.classList.remove("ocultar")
+        }
+    }
+
 }
+
+
+for (let checkbox of filtrarPorCategoria) {
+    checkbox.onclick = () => {
+        filtrarTarjetasCategoria()
+    }
+}
+
+const hayCheckboxSeleccionadoCategoria = () => {
+    for (let checkbox of filtrarPorCategoria) {
+        if (checkbox.checked) {
+            return true
+        }
+    }
+}
+
+const conincideCheckboxCategoriaYTarjeta = tarjeta => {
+    const categoria = tarjeta.dataset.categoria
+    for (let checkbox of filtrarPorCategoria) {
+        if (checkbox.value == categoria && checkbox.checked) {
+            return true
+        }
+    }
+}
+
+const filtrarTarjetasCategoria = () => {
+    for (let tarjeta of tarjetasDeProductosContraida) {
+        tarjeta.classList.add("ocultar")
+        if (hayCheckboxSeleccionadoCategoria()) {
+            if (conincideCheckboxCategoriaYTarjeta(tarjeta)) {
+                tarjeta.classList.remove("ocultar")
+            }
+        } else {
+            tarjeta.classList.remove("ocultar")
+        }
+    }
+    for (let tarjeta of tarjetasDeProductosExpandida) {
+        tarjeta.classList.add("ocultar")
+        if (hayCheckboxSeleccionadoCategoria()) {
+            if (conincideCheckboxCategoriaYTarjeta(tarjeta)) {
+                tarjeta.classList.remove("ocultar")
+            }
+        } else {
+            tarjeta.classList.remove("ocultar")
+        }
+    }
+}
+
+
 
 botonBorrarFiltros.onclick = () => {
     buscarProductosIzquierda.value = ""
     for (let checkbox of reviewCheckbox) {
         checkbox.checked = false
     }
-    tarjeta.classList.remove("ocultar")
+    for (let checkbox of categoriaCheckbox) {
+        checkbox.checked = false
+    }
+    seccionTarjetasComprimidas.classList.remove("ocultar")
 }
 
 botonBorrarFiltrosDerecha.onclick = () => {
@@ -193,5 +266,5 @@ botonBorrarFiltrosDerecha.onclick = () => {
     for (let checkbox of reviewCheckbox) {
         checkbox.checked = false
     }
-    tarjeta.classList.remove("ocultar")
+    seccionTarjetasComprimidas.classList.remove("ocultar")
 }
