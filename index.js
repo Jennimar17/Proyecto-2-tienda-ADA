@@ -6,7 +6,6 @@ const bodyDelDocumento = document.querySelector(".body")
 
 seccionTarjetasExpandidas.classList.add("ocultar")
 
-//BOTON PARA SELECCIONAR LA VISTA DE LAS TARJETAS DE PRODUCTOS
 botonVistaExpandida.onclick = () => {
     seccionTarjetasExpandidas.classList.remove("ocultar")
     seccionTarjetasComprimidas.classList.add("ocultar")
@@ -28,7 +27,6 @@ const primerOverlay = document.getElementById("overlay--first")
 seccionCestaLlena.classList.add("ocultar")
 primerOverlay.classList.add("ocultar")
 
-//BOTON ABRIR Y CERRAR CESTA
 botonAbrirCesta.onclick = () => {
     bodyDelDocumento.classList.add("overflow-hidden")
     seccionCestaLlena.classList.remove("ocultar")
@@ -55,7 +53,6 @@ const segundoOverlay = document.getElementById("overlay--second")
 
 segundoOverlay.classList.add("ocultar")
 
-//FORMULARIO DE COMPRA
 seccionformularioDeCompra.classList.add("ocultar")
 modalAlerta.classList.add("ocultar")
 
@@ -93,7 +90,6 @@ const asideFiltrosDerecha = document.querySelector(".aside--container--right")
 
 asideFiltrosDerecha.classList.add("ocultar")
 
-//FILTROS
 botonAbrirFiltro.onclick = () => {
     bodyDelDocumento.classList.add("overflow-hidden")
     asideFiltrosDerecha.classList.remove("ocultar")
@@ -268,6 +264,9 @@ botonBorrarFiltros.onclick = () => {
 botonBorrarFiltrosDerecha.onclick = () => {
     buscarProductosDerecha.value = ""
     for (let checkbox of reviewCheckbox) {
+        checkbox.checked = false
+    }
+    for (let checkbox of categoriaCheckbox) {
         checkbox.checked = false
     }
     seccionTarjetasComprimidas.classList.remove("ocultar")
