@@ -31,7 +31,7 @@ botonAbrirCesta.onclick = () => {
     bodyDelDocumento.classList.add("overflow-hidden")
     seccionCestaLlena.classList.remove("ocultar")
     primerOverlay.classList.remove("ocultar")
-    document.getElementsByTagName("html")[0].style.overflow = "hidden"
+
 
 }
 
@@ -39,7 +39,7 @@ botonCerrarCesta.onclick = () => {
     bodyDelDocumento.classList.remove("overflow-hidden")
     seccionCestaLlena.classList.add("ocultar")
     primerOverlay.classList.add("ocultar")
-    document.getElementsByTagName("html")[0].style.overflow = "auto"
+
 }
 
 const seccionformularioDeCompra = document.querySelector(".pay-form-section")
@@ -270,4 +270,36 @@ botonBorrarFiltrosDerecha.onclick = () => {
         checkbox.checked = false
     }
     seccionTarjetasComprimidas.classList.remove("ocultar")
+}
+
+const formularioDeCompra = document.querySelector(".total-subtotal")
+const subtotalDeCompra = document.getElementById("subtotal")
+const recargoDeTarjetaDeCredito = document.getElementById("credit-card-charge")
+const recargoDeEnvio = document.getElementById("ship-charge")
+const totalDeCompra = document.getElementById("total")
+const opcionEnvio = document.getElementById("ship-option")
+const opcionDescuento = document.getElementById("discount-option")
+const opcionEfectivo = document.getElementById("cash-option")
+const opcionTarjeta = document.getElementById("credit-card")
+
+const recargo = 0.8
+const subtotal = 37000
+const total = 37000
+const envio = 50
+
+
+opcionEfectivo.onclick = () => {
+    totalDeCompra.textContent = `Total $ ${total}`
+
+}
+
+opcionTarjeta.onclick = () => {
+    recargoDeTarjetaDeCredito.textContent = `Recargo $ ${subtotal + recargo}`
+    totalDeCompra.textContent = `Total $ ${total + subtotal + recargo}`
+}
+
+
+opcionEnvio.onclick = () => {
+    recargoDeEnvio.textContent = `Envío $  ${envio}`
+    totalDeCompra.textContent = `Total $ ${total + envio + subtotal + recargo}`
 }
