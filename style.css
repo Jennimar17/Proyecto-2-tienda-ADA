@@ -177,22 +177,27 @@ body {
 /*MODAL ALERTA */
 
 .modal--alert {
-    width: 500px;
-    height: 250px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 400px;
     position: absolute;
-    top: 150px;
+    top: 0px;
+    z-index: 2;
+}
+
+.alert {
+    width: 50%;
     font-family: 'Questrial', sans-serif;
     font-size: 35px;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     background-color: #ffffff;
-    z-index: 2;
 }
 
 #modal--button {
@@ -626,6 +631,9 @@ body {
     .aside-container {
         display: none;
     }
+    .items-cest-container {
+        padding: 10px;
+    }
     .products-container {
         display: flex;
         flex-direction: column;
@@ -675,5 +683,8 @@ body {
         justify-content: space-between;
         background-color: #F5F5F5;
         padding-left: 20px;
+    }
+    .alert {
+        width: 100%;
     }
 }
