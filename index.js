@@ -281,6 +281,7 @@ const opcionEnvio = document.getElementById("ship-option")
 const opcionDescuento = document.getElementById("discount-option")
 const opcionEfectivo = document.getElementById("cash-option")
 const opcionTarjeta = document.getElementById("credit-card")
+const descuentoDeLaCompra = document.getElementById("descount")
 
 const recargo = 0.8
 const subtotal = 37000
@@ -288,12 +289,14 @@ const total = 37000
 const envio = 50
 
 
+
 opcionEfectivo.onclick = () => {
     totalDeCompra.textContent = `Total $ ${total}`
-
+    recargoDeTarjetaDeCredito.classList.add("ocultar")
 }
 
 opcionTarjeta.onclick = () => {
+    recargoDeTarjetaDeCredito.classList.remove("ocultar")
     recargoDeTarjetaDeCredito.textContent = `Recargo $ ${subtotal + recargo}`
     totalDeCompra.textContent = `Total $ ${total + subtotal + recargo}`
 }
@@ -302,4 +305,9 @@ opcionTarjeta.onclick = () => {
 opcionEnvio.onclick = () => {
     recargoDeEnvio.textContent = `Envío $  ${envio}`
     totalDeCompra.textContent = `Total $ ${total + envio + subtotal + recargo}`
+}
+
+opcionDescuento.onclick = () => {
+    descuentoDeLaCompra.textContent = `Descuento 10% $ ${total - 0.8}`
+
 }

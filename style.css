@@ -370,6 +370,22 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s;
+}
+
+.product-img:hover {
+    transform: scale(1.5);
+}
+
+.product-description {
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
 }
 
 .product-information-container {
@@ -377,11 +393,14 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    margin: 30px;
 }
 
 .product-img {
     width: 100%;
     height: auto;
+    transition: 0.2s;
+    opacity: 1;
 }
 
 .product-img img {
