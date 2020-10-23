@@ -135,8 +135,10 @@ buscarProductosIzquierda.oninput = () => {
         } else {
             tarjeta.classList.add("ocultar")
         }
+
     }
 }
+
 
 buscarProductosDerecha.oninput = () => {
     for (let tarjeta of tarjetasDeProductosContraida) {
