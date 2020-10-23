@@ -25,7 +25,7 @@ Se respeta el diseño pero Los colores, imagenes y tipografías fueron modificad
 
 # Project-Store-ADA
 
-Project carried out as part of the 2nd project of the [ADA ITW] Front-End Web Development career (https://adaitw.org/).
+Project carried out as part of the 2nd project of the Front-End Web Development career [ADA ITW](https://adaitw.org/).
 
 
 ## Technologies
@@ -39,9 +39,9 @@ The technologies used in this project are:
 
 ## Information
 
-The project was carried out based on the following project: [Model Template] (https://frontend-proyecto-tienda-actualizado.netlify.app/).
-The design is respected but the colors, images and fonts were modified to my liking. In this project ** CSS ** is used to add some animations and transitions, it also incorporates ** JavaScript ** to generate greater interactivity.
+The project was carried out based on the following project: [Model Template](https://frontend-proyecto-tienda-actualizado.netlify.app/).
+The design is respected but the colors, images and fonts were modified to my liking. In this project **CSS** is used to add some animations and transitions, it also incorporates **JavaScript** to generate greater interactivity.
 
 ## Link
 
-[ADA Store Project] (https://jennimar17.github.io/Proyecto-tienda-ADA/).
+[ADA Store Project](https://jennimar17.github.io/Proyecto-tienda-ADA/).
